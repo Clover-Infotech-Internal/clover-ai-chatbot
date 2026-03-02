@@ -132,8 +132,7 @@
     </div>
 
     <script>
-      const webhookUrl =
-        "https://raisn8n.app.n8n.cloud/webhook/cloverinfotech2026";
+      const webhookUrl = "https://raisn8n.app.n8n.cloud/webhook/bgic";
       const chatBody = document.getElementById("chatBody");
       const userInput = document.getElementById("userInput");
 
@@ -148,6 +147,8 @@
       async function sendMessage() {
         const text = userInput.value.trim();
         if (!text) return;
+
+        console.log("row text form user input", text)
 
         addMessage(text, "user");
         userInput.value = "";
